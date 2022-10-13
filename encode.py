@@ -7,14 +7,7 @@ def encodeToUTF8(string):
         そのまま文字列型にして返す
     ''' 
     hex = string.encode('UTF-8')
-    string = repr(hex)
-    string = formatUTF8(string)
-    return string
+    return " ".join(list(map(lambda x: "%02X" % x, list(hex))))
 
-def formatUTF8(string):
-    string = string.upper() 
-    string = re.sub(r'\\X', ' ', string)
-    return string[3:-1] # b'' の中身だけ表示
-
-source = 'hogehogeにゃー'
+source = 'こんにちは'
 print(encodeToUTF8(source))
