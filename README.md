@@ -14,7 +14,7 @@ hogehogeにゃーん
 
 ## デコード
 `decode.py` の `decodeFromUTF8` は 
-上の`encodeToUTF8`で変換された16進数を受け取って元の文字列に戻す
+上の`encodeToUTF8`で変換された16進数を受け取って元の文字列に戻す関数
 
 例：
 ```
