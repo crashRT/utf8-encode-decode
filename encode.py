@@ -1,6 +1,3 @@
-import re
-import binascii
-
 def encodeToUTF8(string):
     '''
         文字列をutf8のバイト列に変換し、
@@ -8,6 +5,3 @@ def encodeToUTF8(string):
     ''' 
     hex = string.encode('UTF-8')
     return " ".join(list(map(lambda x: "%02X" % x, list(hex))))
-
-source = 'こんにちは'
-print(encodeToUTF8(source))
